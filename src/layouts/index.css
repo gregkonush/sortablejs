@@ -1,0 +1,53 @@
+.main {
+  --primary: #456ffa;
+  --secondary: #306daf;
+  --accent: #fa457f;
+  --highlight: #af3059;
+  --pop: #faed45;
+  --background: #252e42;
+
+  --background-light-100: #3b4355;
+  --background-light-200: #515868;
+  --background-light-300: #666d7b;
+  --background-light-400: #7c828e;
+  --background-light-500: #9297a1;
+  --background-light-600: #a8abb3;
+  --background-light-700: #bec0c6;
+  --background-light-800: #d3d5d9;
+  --background-light-900: #e9eaec;
+
+  --background-dark-900: #21293b;
+  --background-dark-800: #1e2535;
+  --background-dark-700: #1a202e;
+  --background-dark-600: #161c28;
+  --background-dark-500: #131721;
+  --background-dark-400: #0f121a;
+  --background-dark-300: #0b0e14;
+  --background-dark-200: #07090d;
+  --background-dark-100: #040507;
+}
+
+.main {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  height: 100%;
+  background-color: var(--background);
+}
+
+.header {
+  background-color: var(--background-dark-800);
+  border-bottom: 1px var(--background-light-100) solid;
+}
+
+.sider {
+  background-color: var(--background-dark-900);
+  border-right: 1px var(--background-light-100) solid;
+}
+
+.content {
+  background-color: var(--background);
+}
+
+.menu {
+  background-color: var(--background);
+}

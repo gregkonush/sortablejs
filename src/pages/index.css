@@ -1,0 +1,52 @@
+@import '../layouts/index.css' main;
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  color: rgb(221, 221, 221);
+}
+
+.listItem {
+  margin-bottom: 1em;
+  background-color: var(--background-dark-600);
+  text-align: start;
+  color: var(--background-light-700);
+  border: none;
+}
+
+.listItem:hover {
+  cursor: grab;
+  color: var(--primary);
+}
+
+.ghost {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(22, 28, 40, 1) 80%);
+  color: rgb(69, 111, 250);
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 0;
+  height: fit-content;
+  padding: 1em;
+}
+
+.itemDescription {
+  position: relative;
+  height: 4.4em; /* exactly three lines */
+  overflow: hidden;
+}
+
+.itemDescription:after {
+  content: '';
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 1.2em;
+  background: linear-gradient(to right, rgba(22, 28, 40, 0), rgba(22, 28, 40, 1) 50%);
+}
