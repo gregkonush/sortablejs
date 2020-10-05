@@ -12,7 +12,7 @@
   background-color: var(--background-dark-600);
   text-align: start;
   color: var(--background-light-700);
-  border: 0px outset var(--primary);
+  border: 1px outset transparent;
 }
 
 .listItem:hover {
@@ -21,8 +21,7 @@
 }
 
 .ghost {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(22, 28, 40, 1) 80%);
-  color: rgb(69, 111, 250);
+  background: linear-gradient(to right, rgba(30, 37, 53, 0.5),  rgba(22, 28, 40, 1) 80%);
   border: 1px outset var(--primary);
 }
 
@@ -53,6 +52,8 @@
 }
 
 .dragged {
-  background-color: var(--primary);
-  opacity: 1;
+  cursor: move !important; /* fallback: no `url()` support or images disabled */
+  cursor: -webkit-grabbing !important; /* Chrome 1-21, Safari 4+ */
+  cursor: -moz-grabbing !important; /* Firefox 1.5-26 */
+  cursor: grabbing !important; /* W3C standards syntax, should come least */
 }
