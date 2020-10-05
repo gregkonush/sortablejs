@@ -10,11 +10,11 @@ const BasicLayout: React.FC = props => {
       <Header className={styles.header}></Header>
       <Layout>
         <Sider className={styles.sider}>
-          <Menu className={styles.menu}>
-            <Menu.Item>
+          <Menu className={styles.menu} defaultSelectedKeys={["1"]}>
+            <Menu.Item key="1">
               Your Votes
             </Menu.Item>
-            <Menu.Item>
+            <Menu.Item key="2">
               Results
             </Menu.Item>
           </Menu>
