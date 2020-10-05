@@ -21,8 +21,12 @@
 }
 
 .ghost {
-  background: linear-gradient(to right, rgba(30, 37, 53, 0.5),  rgba(22, 28, 40, 1) 80%);
+  background: linear-gradient(to right, rgba(30, 37, 53, 0.5), rgba(22, 28, 40, 1) 80%);
   border: 1px outset var(--primary);
+}
+
+.listItem:active {
+  cursor: grabbing;
 }
 
 .listContainer {
